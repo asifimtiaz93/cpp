@@ -24,6 +24,16 @@ public:
     }
 
 };
-int main(){
 
+class Book{
+    int id;
+    int isbn;
+    string name;
+    string publication;
+    string author;
+    float price;
+    
+}
+int main(){
+    
 }

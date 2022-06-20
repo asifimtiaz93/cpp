@@ -1,6 +1,7 @@
 #include <bits/stdc++.h>
 
 using namespace std;
+
 class Person{
 public:
     string name;
@@ -66,9 +67,21 @@ protected:
 public:
     string company;
     virtual int power_consumption()=0;
-    virtual Operator operated_by()=0;
+    virtual void operated_by()=0;
 
 };
+
+
+class Electric_Machine{
+protected:
+    int power_rate, hrs_active;
+public:
+   int  power_consumption(){
+        return power_rate*hrs_active;
+    }
+
+};
+
 
 int main(){
     Operator l(12,"rahim", "op", 1767777, 50000, 3000, 500, 5);

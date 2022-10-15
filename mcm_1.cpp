@@ -46,8 +46,6 @@ void parenthesize(int i, int j){
     }
 }
 int main(){
-    
- 
     cin >> n;
     
     int c=0;
